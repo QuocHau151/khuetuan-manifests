@@ -37,7 +37,7 @@ spec:
     spec:
       containers:
         - name: khuetuan-app
-          image: docker.io/quochau151/khuetuan:latest
+          image: docker.io/quochau151/khuetuan:main-5f86fde
           ports:
             - containerPort: 80
               name: http
