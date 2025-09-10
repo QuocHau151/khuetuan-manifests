@@ -69,7 +69,7 @@ spec:
 
 ---
 #----------------------------------------------
-# Ingress - Expose API ra ngoài cluster
+# Ingress - Expose Service ra internet
 #----------------------------------------------
 apiVersion: networking.k8s.io/v1
 kind: Ingress
