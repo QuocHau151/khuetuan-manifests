@@ -80,6 +80,7 @@ metadata:
     component: ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
     - host: khuetuan.com
