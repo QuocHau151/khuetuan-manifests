@@ -14,7 +14,7 @@ data:
   DATABASE_URL: "postgresql://khuetuan:123456@14.241.251.180:5002/khuetuandb"
   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: "pk_test_cG9saXNoZWQtZ2xvd3dvcm0tOTEuY2xlcmsuYWNjb3VudHMuZGV2JA"
   CLERK_SECRET_KEY: "sk_test_FQPaWcJNn422uC3w5MV6PuwBdmNEiI9H209fzKYKe3"
-  NEXT_PUBLIC_APP_URL: "http://khuetuan.com"
+  NEXT_PUBLIC_APP_URL: "https://khuetuan.com"
 
 ---
 #----------------------------------------------
@@ -78,9 +78,6 @@ metadata:
   labels:
     app: khuetuan
     component: ingress
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-    nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   ingressClassName: nginx
   rules:
